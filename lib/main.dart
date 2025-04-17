@@ -19,6 +19,15 @@ void main()
         shadowColor: Colors.black,
         backgroundColor: Colors.red,
         scrolledUnderElevation: 5.0,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+              gradient:LinearGradient(
+                begin: Alignment.bottomLeft,
+                end: Alignment.bottomRight,
+                colors: [Colors.black, Colors.white],
+              ),
+          ),
+        ),
       ),
       body:homePage() ,
     ),
